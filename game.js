@@ -76,12 +76,26 @@ that we declared in variable myNum1 at the beginning of our code. */
 var a4 = parseInt(prompt('I am thinking of a number between 1 and 10. Input your guess in the prompt below'));
 	if(a4 === myNum1){
 		alert('Nice! You guessed my number! Come buy me a lottery ticket ' + name + '.');
+		numberCorrect++;
 	}
 	else if (a4 > myNum1){
 		alert('Sorry your guess was too high');
 	}	
 	else if (a4 < myNum1){
 		alert('Sorry your guess was too low');
+	}
+
+var a5 = prompt("Have I been skydiving? (y/n)").substring(0,1).toLowerCase();
+
+	if (a3 === "y")
+	{
+		alert(ya + " I have indeed jumped out of perfectly good airplanes. It's very fun and you should try it.");
+		console.log(ya + " I have indeed jumped out of perfectly good airplanes. It's very fun and you should try it.");
+		numberCorrect++;
+	}
+	else{
+		alert(no + ' am that crazy. I have been twice so far and plan to jump many more times!');
+		console.log(no + ' am that crazy. I have been twice so far and plan to jump many more times!');
 	}
 //Finally I fooled around with some various cases where feedback will vary based on the accuracy of our user.
 
@@ -98,6 +112,10 @@ switch (numberCorrect){
 	case 4:
 		alert("Awesome job! You got " + numberCorrect + " questions correct. You must know me really well! Thanks for playing and next time I would love to learn about you!");
 		break;
+	case 5:
+		alert("Incredible! You got " + numberCorrect + " questions correct. Have you been stalking me...?");
+		break;
+
 	default:
 		alert("You got " + numberCorrect + " questions correct. There was only a 11% chance this would happen. Clearly you must hate me and want nothing to do with me. /cry /wrists");
 		break;
