@@ -6,6 +6,7 @@ var ya = "Correct!";
 var no = "Incorrect. I actually";
 var numberCorrect = 0;
 var myNum1 = 3;
+var myNum2 = 10;
 
 //Next we meet our user and prep them for what will follow. 
 
@@ -97,6 +98,18 @@ var a5 = prompt("Have I been skydiving? (y/n)").substring(0,1).toLowerCase();
 		alert(no + ' am that crazy. I have been twice so far and plan to jump many more times!');
 		console.log(no + ' am that crazy. I have been twice so far and plan to jump many more times!');
 	}
+
+var a6 = parseInt(prompt('I am thinking of a new number between 1 and 10. Input your guess in the prompt below'));
+	if(a6 === myNum2){
+		alert('Nice! You guessed my number! Come buy me a lottery ticket ' + name + '.');
+		numberCorrect++;
+	}
+	else if (a6 > myNum2){
+		alert('Sorry your guess was too high. Better luck next time.');
+	}	
+	else if (a6 < myNum2){
+		alert('Sorry your guess was too low. Better luck next time.');
+	}
 //Finally I fooled around with some various cases where feedback will vary based on the accuracy of our user.
 
 switch (numberCorrect){
@@ -115,9 +128,11 @@ switch (numberCorrect){
 	case 5:
 		alert("Incredible! You got " + numberCorrect + " questions correct. Have you been stalking me...?");
 		break;
-
+	case 6:
+		alert("Ok, I am officially creeped out. You got " + numberCorrect + " questions correct. Seriously though, about that lottery ticket...");
+		break;
 	default:
-		alert("You got " + numberCorrect + " questions correct. There was only a 11% chance this would happen. Clearly you must hate me and want nothing to do with me. /cry /wrists");
+		alert("You got " + numberCorrect + " questions correct. The odds of this happening are about 5%. Clearly you must hate me and want nothing to do with me. /cry /wrists");
 		break;
 
 	}	
