@@ -93,7 +93,6 @@ var a5 = prompt("Have I been skydiving? (y/n)").substring(0,1).toLowerCase();
 	}
 	else{
 		document.getElementById('a5').innerHTML = (no + ' am that crazy. I have been twice so far and plan to jump many more times!');
-		console.log(no + ' am that crazy. I have been twice so far and plan to jump many more times!');
 	}
 
 var a6 = parseInt(prompt('I am thinking of a new number between 1 and 10. Input your guess in the prompt below'));
@@ -111,24 +110,31 @@ var a6 = parseInt(prompt('I am thinking of a new number between 1 and 10. Input 
 
 switch (numberCorrect){
 	case 1:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("You got " + numberCorrect + " question correct. Thanks for playing and getting to know me! Feel free to play again to learn more about me.");
 		break;
 	case 2:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("Well done. You got " + numberCorrect + " questions correct. It would seem you know me pretty well. Thanks for playing and I hope to learn more about one another soon!");
 		break;
 	case 3:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("Well done. You got " + numberCorrect + " questions correct. It would seem you know me pretty well. Thanks for playing and I hope to learn more about one another soon!");
 		break;
 	case 4:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("Awesome job! You got " + numberCorrect + " questions correct. You must know me really well! Thanks for playing and next time I would love to learn about you!");
 		break;
 	case 5:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("Incredible! You got " + numberCorrect + " questions correct. Have you been stalking me...?");
 		break;
 	case 6:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("Ok, I am officially creeped out. You got " + numberCorrect + " questions correct. Seriously though, about that lottery ticket...");
 		break;
 	default:
+		document.getElementById('tally').innerHTML = 'After intense computing...';
 		document.getElementById('numberCorrect').innerHTML = ("You got " + numberCorrect + " questions correct. The odds of this happening are about 5%. Clearly you must hate me and want nothing to do with me. /cry /wrists");
 		break;
 
