@@ -10,5 +10,6 @@ Patch Log:
 	version 1.2.3 - game.js file updated with question 4 extended switch. README.md updated.
 	version 1.3.4 - game.js file updated with question 5 and extened switch. README.md updated.
 	version 1.4.5 - game.js file updated with quesion 6 and extened switch. Changed default switch to display correct odds of getting all answers incorrect. README.md updated.
+	version 2.5.6 - Index.html file updated to show questions and display answers on page. game.js file updated to write answers to html page. README.md updated to show patch changes. 
 
 Author: Michael Sweeney
