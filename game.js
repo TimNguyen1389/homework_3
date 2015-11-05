@@ -1,9 +1,11 @@
-/*Set commonly used feeback to user as varriables ya and no. Later I will concatenate these as either confirmation or 
-Also we can create a variable to keep track of the users accuracy. */
+/*Set commonly used feeback to user as varriables ya and no. Later I will concatenate these into feedback telling the user
+if they got the answer correct or not.
+Also we can create a variable to keep track of the users accuracy and variables to compare guesses to. */
 
 var ya = "Correct!";   
 var no = "Incorrect. I actually";
 var numberCorrect = 0;
+var myNum1 = 3;
 
 //Next we meet our user and prep them for what will follow. 
 
@@ -67,6 +69,20 @@ var a3 = prompt("Have I traveled outside of North America? (y/n)").substring(0,1
 		console.log(no + ' spent a month in Japan. It was great fun!');
 	}
 
+/*below we will ask a different kind of question. One that records numeric input. To do this we will use the parseInt()
+method combined with a series of if, else-if statements that examine our user input and compare to our "ideal number" 
+that we declared in variable myNum1 at the beginning of our code. */
+
+var a4 = parseInt(prompt('I am thinking of a number between 1 and 10. Input your guess in the prompt below'));
+	if(a4 === myNum1){
+		alert('Nice! You guessed my number! Come buy me a lottery ticket ' + name + '.');
+	}
+	else if (a4 > myNum1){
+		alert('Sorry your guess was too high');
+	}	
+	else if (a4 < myNum1){
+		alert('Sorry your guess was too low');
+	}
 //Finally I fooled around with some various cases where feedback will vary based on the accuracy of our user.
 
 switch (numberCorrect){
@@ -77,6 +93,9 @@ switch (numberCorrect){
 		alert("Well done. You got " + numberCorrect + " questions correct. It would seem you know me pretty well. Thanks for playing and I hope to learn more about one another soon!");
 		break;
 	case 3:
+		alert("Well done. You got " + numberCorrect + " questions correct. It would seem you know me pretty well. Thanks for playing and I hope to learn more about one another soon!");
+		break;
+	case 4:
 		alert("Awesome job! You got " + numberCorrect + " questions correct. You must know me really well! Thanks for playing and next time I would love to learn about you!");
 		break;
 	default:
