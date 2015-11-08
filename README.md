@@ -15,16 +15,17 @@ Change Log:
 
 	version 1.4.5 - game.js file updated with quesion 6 and extened switch. Changed default switch to display correct odds of getting all answers incorrect. README.md updated.
 
-	version 2.5.6 - index.html file updated to show questions and display answers on page. game.js file updated to write answers to html page. README.md updated to show patch changes. 
+	version 2.5.6 - index.html file updated to show questions and display answers on page. game.js file updated to write answers to html page. README.md updated to show patch changes.
 
 	version 3.6.7 - final tally message to appear after Q6 instead of initial page element. Removed all remaining 'console.log' statements. Bugs updated.
 
-	version 3.7.8 - changed string output for various feedbacks for better color commentary. Added joke to README.md.  
+	version 3.7.8 - changed string output for various feedbacks for better color commentary. Added joke to README.md.
 
 
 Known Bugs:
 
 	Q4 and Q6: User can input string and question gets skipped.
+	(Q4 and Q6 bugs have been addressed.)
 
 	Improper formating for readme.
 
@@ -34,3 +35,7 @@ A teacher was working with a group of children, trying to broaden their horizons
 
 
 Author: Michael Sweeney
+
+Driver: Tim Nguyen
+
+Navigator: Michael Sweeney
